@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Zone_L'univers Basket </title>
+  <link rel="stylesheet" href="style_2.css">
+    
+    
+</head>
+<body>
+<div class="background"></div>
+<div class="content">
+    <header>
+  
+        <h1 class="non">Bienvenue dans le monde du Basketball</h1>
+    </header>
+    
+    <!-- Bouton pour ouvrir le menu -->
+    <button id="menuButton">☰ Menu</button>
+
+    <!-- Menu latéral -->
+    <div id="sideMenu">
+        <a href="#definition">Définition/Règles/Histoire</a>
+        <a href="#championats">NBA & Euroligue</a>
+        <a href="#Joueurs">Joueur iconiques</a>
+        <a href="#Section">Section Sportive Clement Marot</a>
+        <a href="#Résultas">derniers résultats</a>
+
+
+    </div>
+
+
+ <script>
+        // Récupérer les éléments du DOM
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const mainContent = document.querySelector('main');
+
+        // Ouvrir/fermer le menu
+        menuButton.addEventListener('click', () => {
+            if (sideMenu.style.left === '0px') {
+                sideMenu.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sideMenu.style.left = '0';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+  </div>
+</body>
+</html>
