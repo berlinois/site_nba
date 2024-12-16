@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball - NBA & EuroLeague</title>
+    <link rel="stylesheet" href="nba.css">
+</head>
+<body>
+    <header>
+        <h1>Basketball - NBA & EuroLeague</h1>
+        <p>Explorez les ligues de basketball les plus prestigieuses au monde</p>
+    </header>
+<body>
+   
+    <button id="menuButton">☰ Menu</button>
+
+    
+    <div id="sideMenu">
+        <a href="#definition">Définition/Règles/Histoire</a>
+        <a href="#championats">NBA & Euroligue</a>
+        <a href="#Joueurs">Joueur iconiques</a>
+        <a href="#Section">Section Sportive Clement Marot</a>
+        <a href="#Résultas">derniers résultats</a>
+
+
+    </div>
+
+
+ <script>
+        // Récupérer les éléments du DOM
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const mainContent = document.querySelector('main');
+
+        // Ouvrir/fermer le menu
+        menuButton.addEventListener('click', () => {
+            if (sideMenu.style.left === '0px') {
+                sideMenu.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sideMenu.style.left = '0';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+    <nav>
+        <a href="#nba">NBA</a>
+        <a href="#euroleague">EuroLeague</a>
+        
+    </nav>
+<section id="video">
+    <h2>Vidéo d'un match NBA typique</h2>
+    <video width="640" height="360" controls>
+        <source src="11979221_2160_3840_60fps.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la balise vidéo.
+    </video>
+    <p>Découvrez l'ambiance dans une salle de NBA à travers cette vidéo captivante.</p>
+</section>
+    <main>
+        <section id="nba">
+            <h2>NBA - National Basketball Association</h2>
+            <p>La NBA (National Basketball Association) est la ligue professionnelle de basketball la plus prestigieuse au monde. Fondée en 1946 sous le nom de Basketball Association of America (BAA) et rebaptisée NBA en 1949 après sa fusion avec la National Basketball League (NBL), elle est composée de 30 équipes réparties entre les États-Unis et le Canada.</p>
+            <div class="liste-equipe">
+                <div class="carte-equipe" >
+                  <div class="image-container">
+                    <img src="https://images.pexels.com/photos/9663897/pexels-photo-9663897.jpeg"                                  alt="Logo des Lakers">
+                    <a href="https://www.nba.com/lakers/" target="_blank">Site des Lakers</a>
+                  </div>
+                    <h3>Los Angeles Lakers</h3>
+                    <p>Avec 17 titres, à égalité avec les Celtics, les Lakers restent une équipe mythique, synonyme de succès. Ils ont connu des dynasties successives grâce à des stars comme Magic Johnson, Kobe Bryant, et LeBron James. </p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://images.pexels.com/photos/29495137/pexels-photo-29495137/free-photo-of-un-match-de-basket-passionnant-au-chase-center-de-san-francisco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"                                  alt="Logo des Warriors ">
+                    <a href="https://www.nba.com/warriors/" target="_blank">Site des Warriors</a>
+                  </div>
+                    
+                    <h3>Golden State Warriors</h3>
+                    <p>Une des franchises les plus titrées de l’histoire, avec 7 championnats NBA. Menés par Stephen Curry, considéré comme l’un des meilleurs tireurs de tous les temps.</p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2023/08/08/01/14/nba-8176216_1280.png"                                  alt="Logo des Bulls ">
+                    <a href="https://www.nba.com/bulls/" target="_blank">Site des Bulls</a>
+                  </div>
+                    
+                    <h3>Chicago Bulls</h3>
+                    <p>Célèbres pour leur dynastie menée par Michael Jordan dans les années 1990. Ils ont remporté 6 titres NBA. Depuis cette époque dorée, l’équipe reste un symbole du basketball mondial malgré des performances récentes plus modestes.</p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2022/07/05/10/27/ball-arena-7302750_960_720.jpg"                                  alt="Logo des Bulls ">
+                    <a href="https://www.nba.com/nuggets/" target="_blank">Site des Nuggets</a>
+</div>
+                  
+                    
+                    <h3>Nuggets de Denver</h3>
+                    <p>Fondés en 1967, ils ont remporté leur tout premier championnat NBA en 2023, grâce à leur star Nikola Jokić, double MVP. Ils se distinguent par un jeu collectif et une forte domination en attaque.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="euroleague">
+            <h2>EuroLeague Basketball</h2>
+            <p>La compétition phare du basketball européen</p>
+            <div class="liste-equipe">
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2022/09/06/16/10/real-madrid-7437018_1280.png"  alt="Real Madrid ">
+                    <a href="https://www.realmadrid.com/sites/fr/zone-vip/basketball-vip" target="_blank">Site du Real Madrid</a>
+                  </div>
+                    
+                    <h3>Real Madrid</h3>
+                    <p>Espagne : C'est l'une des équipes les plus prestigieuses en Europe, avec un palmarès impressionnant incluant de nombreux titres en Liga ACB et en EuroLeague.</p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://images.pexels.com/photos/17879546/pexels-photo-17879546/free-photo-of-football-foot-logo-tissu.jpeg?auto=compress&cs=tinysrgb&w=600"  alt="FC Barcelone ">
+                    <a href="https://www.fcbarcelona.fr/fr/basketball" target="_blank">Site du FC Barcelonne </a>
+                  </div>
+                    
+                    <h3>FC Barcelone</h3>
+                    <p>Espagne: Fondée en 1926, l'équipe est l'une des plus titrées d'Europe</p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://s0.smartresize.com/wallpaper/903/697/HD-wallpaper-olympiacos-champion-2012-champions-olympiakos-basket-euroleague-thrylos-olympiacos-bc-olympiacos.jpg"  alt="Olympiacos ">
+                    <a href="https://www.olympiacosbc.gr/en/" target="_blank">Site de l'Olympiacos basket</a>
+                  </div>
+                    
+                    <h3>Olympiacos</h3>
+                    <p>Grèce : Triple champion de l’EuroLeague, le club est connu pour ses rivalités intenses, notamment avec le Panathinaïkos, et pour son public passionné.</p>
+                </div>
+                <div class="carte-equipe">
+                  <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/a/af/Logo_ASVEL_Lyon_Villeurbanne_-_2011.svg/900px-Logo_ASVEL_Lyon_Villeurbanne_-_2011.svg.png?20210809122619"  alt="Asvel ">
+                    <a href="https://ldlcasvel.com/" target="_blank">Site de L'ASVEL</a>
+                  </div>
+                    
+                    <h3>L'ASVEL</h3>
+                    <p>France :Association Sportive de Villeurbanne Éveil Lyonnais, est le club de basketball le plus titré de France. Propriété en partie de Tony Parker, l’ASVEL est un pilier du championnat français (Betclic Élite) . </p>
+                </div>
+            </div>
+      </section>
+ 
+</body>
+</html>
+

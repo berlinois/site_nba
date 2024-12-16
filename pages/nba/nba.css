@@ -1,4 +1,48 @@
+ /* Menu latéral */
+        #sideMenu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #34495e;
+            color: white;
+            overflow-x: hidden;
+            transition: left 0.3s;
+            padding-top: 20px;
+        }
 
+        #sideMenu a {
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        #sideMenu a:hover {
+            background-color: #2c3e50;
+        }
+
+        /* Bouton pour ouvrir le menu */
+        #menuButton {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1em;
+            z-index: 1000;
+        }
+
+        #menuButton:hover {
+            background-color: #1abc9c;
+        }
+    
         /* Menu latéral */
         #sideMenu {
             position: fixed;
@@ -43,119 +87,132 @@
         #menuButton:hover {
             background-color: #1abc9c;
         }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-        /* Menu latéral */
-        #sideMenu {
-            position: fixed;
-            top: 0;
-            left: -250px;
-            width: 250px;
-            height: 100%;
-            background-color: #34495e;
-            color: white;
-            overflow-x: hidden;
-            transition: left 0.3s;
-            padding-top: 20px;
-        }
-
-        #sideMenu a {
-            padding: 10px 20px;
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
-        }
-
-        #sideMenu a:hover {
-            background-color: #2c3e50;
-        }
-
-        /* Bouton pour ouvrir le menu */
-        #menuButton {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background-color: #2c3e50;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 1em;
-            z-index: 1000;
-        }
-
-        #menuButton:hover {
-            background-color: #1abc9c;
-        }
-        
 header {
-      grid-column: 1 / -1; /* S'étend sur toute la largeur */
-      background-color: #007BFF;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-weight: bold;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.som {
-      background-color: #ff3333; /* Vert */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-      
-    }
-  .def {
-      background-color: #ff5633; /* Vert */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  .points {
-      background-color: #ff8d33; /* Vert */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  .regles {
-      background-color: #ffa533; /* Vert */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  .histoire {
-      background-color: #ffc433; /* Vert */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .def, .points, .regles, .histoire {
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+.liste-equipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 20px;
-    padding: 15px;
-    border-left: 4px solid #0066cc;
-    border-radius: 4px;
 }
 
-.image1{
-   float: right; 
+.carte-equipe {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.image2{border-radius: 8px; /* Ajoute des coins arrondis */
-   }
-h2{text-align: center;}
+
+.carte-equipe img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+ .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image-container img {
+      display: block;
+      width: 300px; /* Ajustez la taille selon vos besoins */
+      height: auto;
+    }
+
+    .image-container a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover a {
+      opacity: 1;
+    }
+    
+    #video {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#video video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #34495e;
+    border-radius: 8px;
+}
+
+#video h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#video p {
+    color: #555;
+    font-size: 1em;
+    margin-top: 10px;
+}

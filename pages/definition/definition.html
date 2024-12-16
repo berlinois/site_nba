@@ -1,1 +1,127 @@
-hgfhgfhgfh ghg fhg fhgf hg fhgfhgfh
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="definition.css">
+<body>
+
+<body>
+    <!-- Bouton pour ouvrir le menu -->
+    <button id="menuButton">☰ Menu</button>
+
+    <!-- Menu latéral -->
+    <div id="sideMenu">
+        <a href="#definition">Définition/Règles/Histoire</a>
+        <a href="#championats">NBA & Euroligue</a>
+        <a href="#Joueurs">Joueur iconiques</a>
+        <a href="#Section">Section Sportive Clement Marot</a>
+        <a href="#Résultas">derniers résultats</a>
+
+
+    </div>
+
+
+ <script>
+        // Récupérer les éléments du DOM
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const mainContent = document.querySelector('main');
+
+        // Ouvrir/fermer le menu
+        menuButton.addEventListener('click', () => {
+            if (sideMenu.style.left === '0px') {
+                sideMenu.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sideMenu.style.left = '0';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+
+
+<section id="definition">
+
+    <header>
+        <h2><u>Le Basket-ball </u></h2>
+    </header>
+    <p class="som">
+     SOMMAIRE:
+     
+    <ul >
+    <img
+  src="https://cdn.pixabay.com/photo/2019/06/10/15/11/basketball-4264543_1280.png"
+  alt="ballon de basket"
+  height=90px
+  class="image1"
+  />
+      <li><a href="#def">Définition</a></li>
+      <li><a href="#points">Points</a></li>
+      <li><a href="#regles">Les règles principales du basket</a></li>
+      <li><a href="#histoire">Histoire du basket</a></li>
+    </ul>
+
+ <div class="def">
+    <p id="def" >
+      <h3 ><u>Définition:</u></h3>
+
+    	 Le basket-ball est un sport qui oppose 2 équipes de 5 joueurs durant 4 périodes de 10 minutes, que l'on appelle « quart-temps ».L'objectif est de marquer plus de points que l'adversaire. Il n'y a jamais de match nul en basket. En cas d'égalité à la fin du temps réglementaire (il n'y a pas d'arrêts de jeu, une sonnerie retentit exactement à la fin des 10 minutes de chaque quart-temps), on joue une prolongation de 5 minutes. En cas de score de parité après cette  prolongation, on en joue une nouvelle, et ainsi de suite, jusqu'à 
+ce que le vainqueur émerge. Les points se marquent en faisant passer le ballon dans un anneau situé à 3,05 mètres du sol.</p>
+  </div>
+  <div class="points">
+	<p id="points" >
+	<h3 ><u>Paniers à 1 , 2 et 3 points au basket</u></h3>
+
+		Le nombre de points marqués dépend de la distance à laquelle le lancer est effectué. Tout lancer effectué au-delà de 
+la ligne des 3 points, située à 6 m 75 de l'anneau, en rapporte donc 3. Tout autre panier rapporte 2 points, sauf s'il 
+s'agit d'un lancer franc, consécutif à une faute. Le lancer franc rapporte  un point. </p>
+<img
+  src="https://cdn.pixabay.com/photo/2022/02/28/19/33/sports-7039920_1280.jpg"
+  alt="panier de basket"
+  height=150px
+  class="image2"
+  />
+  </div>
+  <div class="regles">
+    
+  
+  <p id="regles" >
+	<h3 ><u>Les règles principales du basket</u></h3>
+	   <ol type="I">
+ 		 <li>Les joueurs sont obligés de faire rebondir le ballon, ce qu'on appelle dribler, au moins une fois tous les 2 pas. En cas de manquement à cette règle, l'arbitre siffle un « marché ».</li><br>
+     
+  		 <li>L'équipe qui a la possession du ballon est également obligée de tenter sa chance au panier toutes les 24 secondes. Cette règle a évidemment pour objectif d'empêcher l'équipe qui mène au score de garder indéfiniment la possession.</li><br>
+       
+  		 <li>Le ballon ne peut être joué qu'avec les mains.</li><br>
+       
+  		 <li>Les contacts sont interdits. En cas de contact, c'est le défenseur qui est sanctionné d'une faute, sauf si le défenseur était statique : on parle alors d'une faute offensive.</li><br>
+       
+ 		 <li>Un joueur qui a commis 5 fautes doit être remplacé et ne peut plus prendre part au match. Lorsqu’une faute est commise sur un joueur qui s'apprête à tirer, il reçoit 2 lancers francs, 3 s'il s'agissait d'un tir à 3 points.</li>
+     <li><a href="https://about.fiba.basketball/fr/our-sport/official-basketball-rules">Règles Officielles de la FIBA</a></li>
+	  </ol>
+    
+    <p/>
+  
+
+    </div>
+    <div class="histoire">
+      
+  
+     <p id="histoire" >
+     <h3 ><u>Histoire du Basket</u></h3>
+	 
+Le basketball a été inventé en 1891 par James Naismith, professeur d'éducation physique, pour occuper ses étudiants pendant l'hiver. Le jeu consistait à lancer un ballon dans des paniers fixés aux murs, et il est devenu rapidement populaire dans les écoles américaines.
+        </p>
+        
+  </div>
+  
+  <img src=""
+  alt="James Naismith"
+  height=100px>
+  <figcaption >James Naismith</figcaption>
+
+
+  
+  </body>
+</html>
