@@ -58,15 +58,23 @@
            
             width: 100%; /* Assure une image responsive */
             height: auto; /* Maintient le ratio */
+            transition: .2s -webkit-filter ease-in-out;
+        }
+        .image-container:hover img {
             filter: blur(5px); 
         }
 
+        .image-container:hover .text-overlay {
+            opacity: 1;
+        }
         /* Texte */
         .image-container .text-overlay {
+            transition: opacity .2s ease-in-out;
+            opacity: 0;
             position: absolute; /* Superpose sur l'image */
             top: 50%; /* Centre verticalement */
-            left: 50%; /* Centre horizontalement */
-            transform: translate(-50%, -50%); /* Ajuste le positionnement au centre */
+            left: 30%; /* Centre horizontalement */
+            transform: translate(-20%, -50%); /* Ajuste le positionnement au centre */
             color: 	#FFE4C4; /* Couleur du texte */
             font-size: 18px; /* Taille du texte */
             font-weight: bold;
@@ -102,4 +110,13 @@ h1{text-align: center;}
 .bordeau_compens {
   margin-top: 140px; 
   
+}
+.item-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item {
+    display: flex;
+    flex-direction: column;
 }
