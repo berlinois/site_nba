@@ -1,5 +1,4 @@
-
-        /* Menu latéral */
+/* Menu latéral */
         #sideMenu {
             position: fixed;
             top: 0;
@@ -124,3 +123,25 @@
             border-radius: 40px; 
         }
 h1{text-align: center;}
+
+.bordeau {
+    position: fixed;
+    top: 0;           
+    left: 0;          
+    width: 100%;      
+    background: orange ;  
+    color: white;     
+    text-align: center;
+    border: 10px ridge #00FFFF;
+    font-size: 20px;
+    font-family : imapct,fantasy;
+    z-index: 800;} 
+.imagelogo { float: right;
+        max-width: 100px;
+        margin: 5px;
+        border-radius: 100px;
+                    } 
+.bordeau_compens {
+  margin-top: 140px; 
+  
+}

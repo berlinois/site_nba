@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="section.css">
+  <title>Section basket clément Marot</title>
+  </head>
+
+  <body>
+    <button id="menuButton">☰ Menu</button>
+
+    
+    <div id="sideMenu">
+        <a href="./../definition/definition.html">Définition/Règles/Histoire</a>
+        <a href="./nba.html">NBA & Euroligue</a>
+        <a href="./../joueurs/joueurs.html">Joueur iconiques</a>
+        <a href="./../section/section.html">Section Sportive Clement Marot</a>
+
+
+    </div>
+ <script>
+        // Récupérer les éléments du DOM
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const mainContent = document.querySelector('main');
+
+        // Ouvrir/fermer le menu
+        menuButton.addEventListener('click', () => {
+            if (sideMenu.style.left === '0px') {
+                sideMenu.style.left = '-250px';
+                mainContent.style.marginLeft = '0';
+            } else {
+                sideMenu.style.left = '0';
+                mainContent.style.marginLeft = '250px';
+            }
+        });
+    </script>
+
+    <div class="bordeau">
+      <img class="imagelogo" src="./../../assets/Logo.png" alt="Logo"> 
+      <h1>Bienvenue dans le monde du Basketball</h1>
+    </div>
+    <div class="bordeau_compens">
+    <div class="section">
+        <div class="noir">
+    <p>
+        <span class="bleu">La section basket Clément Marot est basée au Lycée de Cahors , et acueille chaque année une équipe féminine 
+      et une équipe masculine de basket.Ces deux équipes évoluent en niveau R1 en Occitanie </span><span class="jaune">et permettent au joueurs
+       de pratiquer leur passion au seins du lycée et pendant les cours.Cette section fait chaque année des sélections 
+       pour accueillir de nouveaux joueurs.</span>
+    </p>
+    </div>
+</div>
+    <div class="section">
+        <div class="blanc">
+     <figure>
+  <img src="./../../assets/terrain.jpg" alt="Palais des sports de cahors" />
+    <figcaption><u><span class="bleu">Le Palais des sport de Cahors </span>,<span class="jaune">la salle où l'on s'entraîne.</span></u></figcaption>
+  </figure>
+ </div>
+</div>
+  <div class="section">
+    <div class="noir">
+  <figure>
+   <img src="./../../assets/banc_section.jpg" alt="Rentrée d'echauffement" />
+    <figcaption><u><span class="bleu">L'équipe après l'échauffement</span> <span class="jaune">de début de match.</span></u></figcaption>
+  </figure>
+    </div>
+</div>
+  <div class="section">
+    <div class="blanc">
+  <figure>
+  <img src="./../../assets/victoire_section.jpg" alt="Victoire contre Albi" />
+    <figcaption><u><span class="bleu">L'équipe face aux supporters après</span><span class="jaune"> la victoire contre Albi</span></u></figcaption>
+  </figure>
+    </div>
+</div>
+    </div>
+  </body>
+</html>
